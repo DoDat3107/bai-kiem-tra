@@ -17,7 +17,8 @@
     
         let b = [];
     
-        console.log("Mảng a:", a);
+        document.write("Mảng a:", a +"<br/>");
+        
     
         for (let n = 0; n < a.length; n++) { 
             if (isPrime(a[n])) {
@@ -25,7 +26,7 @@
             }
         }
     
-        console.log("Mảng b chứa các số nguyên tố:", b);
+        document.write("Mảng b chứa các số nguyên tố:", b);
     
         function isPrime(num) {
             if (num <= 1) {
