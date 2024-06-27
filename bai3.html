@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" >
+        <tr>
+            <th colspan="2" >Thông tin Sổ tích kiệm</span></th>
+        </tr>
+        <tr>
+            <th>Mã số</th>
+            <td style="text-align: center;"> <input type="text" placeholder="mã số" id="maso" maxlength="5"></td>
+        </tr>
+        <tr>
+            <th>loại sổ tích kiệm</th>
+            <td style="text-align: center;"> <input type="text" placeholder="loại sổ tích kiêm" id="loaisotichkiem"  maxlength="10"></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td style="text-align: center;"> <input type="text" placeholder="Họ tên" id="name" maxlength="30"></td>
+        <tr>
+            <th>CMND</th>
+            <td style="text-align: center;"> <input type="number" placeholder="Chứng minh nhân dân" id="CMND"></td>
+        </tr>
+        <tr>
+            <th>Ngày mở sổ</th>
+            <td style="text-align: center;"> <input type="date" placeholder="ngày mở sổ" id="date"></td>
+        </tr>
+        <tr>
+            <th>Số tiền gửi vào</th>
+            <td style="text-align: center;"> <input type="number" placeholder="Số tiền gửi" id="tien"></td>
+        </tr>
+        <tr>
+            <th>action</th>
+            <td style="text-align: center;">
+                <div id="save">
+                    <button onclick="Add()">Thêm</button>
+                </div>
+        </tr>
+
+        <table border="1" id="table">
+        </table >    
+
+    <script src="Sotichkiem.js"></script>
+    <script src="info.js"> </script>
+    <script src="main.js"></script>
+</body>
+</html>
