@@ -6,20 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let a = parseInt(prompt("Nhập phần tử số của a " ));
-        let b = parseInt(prompt("Nhập phần mẫu số của a " ));
-        let c = parseInt(prompt("Nhập phần tử số của b " ));
-        let d = parseInt(prompt("Nhập phần mẫu số của b " ));
-
-        let DieuKien = a * d === b * c;
+     <script>
+ 
+        function compareFractions(a, b, c, d) {
+            return a * d === b * c;
+        }
 
 
-    if (DieuKien) {
-        alert("Hai phân số " +a+"/"+b+" Và "+c+"/"+d + " là bằng nhau." + true);
-    } else {
-        alert("Hai phân số " +a+"/"+b+" Và "+c+"/"+d + " là khác nhau." + false);
-    }
+        let a = parseInt(prompt("Nhập phần tử số của a:"));
+        let b = parseInt(prompt("Nhập phần mẫu số của a:"));
+        let c = parseInt(prompt("Nhập phần tử số của b:"));
+        let d = parseInt(prompt("Nhập phần mẫu số của b:"));
+
+        
+        let areEqual = compareFractions(a, b, c, d);
+
+
+        if (areEqual) {
+            alert("Hai phân số " + a + "/" + b + " và " + c + "/" + d + " là bằng nhau.");
+        } else {
+            alert("Hai phân số " + a + "/" + b + " và " + c + "/" + d + " là khác nhau.");
+        }
     </script>
 </body>
 </html>
